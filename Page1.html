@@ -11,15 +11,23 @@
 
     <body>
 
-        <input/>
+        <input id="NameID"/>
+
+        <button id="SaveID">Save</button>
 
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>       <!--this is the jquery function which adds a range of methods-->
+        <script>
+            
+            $("#SaveID").click(function(){                  //$ is a function called jquery which takes a string parameter called the selector
+                                                            //#indicates that looking for an element with an id of the following name, ie SaveID
+                                                            //.click is a method that takes a function parameter which does what we want to happen when we click on SaveID
+                alert("Hello "+ $("#NameID").val());        //.val is a method with no arguments which returns the current value of the object found via the $
+            });
 
 
-
-
-
+        </script>
 
     </body>    
 
